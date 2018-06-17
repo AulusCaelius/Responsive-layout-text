@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>text</title>
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="../css/authority.css"/>
+		<script type="text/javascript" src="../js/bootstrap.min.js"/></script>
+		<script type="text/javascript" src="../js/left_side.js"></script>
+	</head> 
+	<body>
+		<div class="container-fluid" style="padding: 0px;position: relative;">
+			<nav class="col-xs-12 col-sm-12 col-md-12" style="background-color: #95af57;">
+				<div class="visible-xs row">
+					<div class="col-xs-3"><a onclick="nav_side()"><img src="../image/列表.png"/ id="list"></a></div>
+					<p class="title col-xs-6" style="margin-top: 8px;font-size: 18px;font-weight:600;">24节气网站欢迎您~</p>
+					<p class="title col-xs-3" style="font-size: 14px; margin-top: 15px;">当前:<span style="color: #c24f4f;">夏至</span></p>		
+				</div>
+				<div class="hidden-xs row">
+					<p class="visible-md visible-lg title col-md-3" style="margin-top:5px;font-size:20px;font-weight:600;">2&nbsp;4&nbsp;节&nbsp;气&nbsp;网&nbsp;站</p>
+					<ul style="margin-top: 8px;">
+						<li class="col-sm-3 col-md-2 title" style="cursor: pointer;font-size:16px;font-weight:600;">春暖花开</li>
+						<li class="col-sm-3 col-md-2 title" style="cursor: pointer;font-size:16px;font-weight:600;">夏日热情</li>
+						<li class="col-sm-3 col-md-2 title" style="cursor: pointer;font-size:16px;font-weight:600;">秋月丰硕</li>
+						<li class="col-sm-3 col-md-2 title" style="cursor: pointer;font-size:16px;font-weight:600;">凛冬将至</li>
+					</ul>
+				</div>
+			</nav>
+			<div id="left_list" class="visible-xs">
+				<img id="nav_side_img" onclick="nav_side()" src="../image/nav_side_img.jpg"/>
+				<ul id="nav_side_ul" >
+					<a style="color:#687d6c;" onclick="spring_nav">
+						<li class="nav_side_li">春暖花开
+							<a><div class="nav_side_li_div" style="color:#687d6c;">全部</div></a>
+							<a><div class="nav_side_li_div" style="color:#687d6c;">立春</div></a>
+							<a><div class="nav_side_li_div" style="color:#687d6c;">雨水</div></a>
+							<a><div class="nav_side_li_div" style="color:#687d6c;">惊蛰</div></a>
+							<a><div class="nav_side_li_div" style="color:#687d6c;">春分</div></a>
+							<a><div class="nav_side_li_div" style="color:#687d6c;">清明</div></a>
+							<a><div class="nav_side_li_div" style="color:#687d6c;">谷雨</div></a>
+						</li>
+					</a>
+					<a style="color:#532f2f;">
+						<li class="nav_side_li" onclick="summur_nav">夏日热情
+							<a><div class="nav_side_li_div" style="color:#532f2f;">全部</div></a>
+							<a><div class="nav_side_li_div" style="color:#532f2f;">立夏</div></a>
+							<a><div class="nav_side_li_div" style="color:#532f2f;">小满</div></a>
+							<a><div class="nav_side_li_div" style="color:#532f2f;">芒种</div></a>
+							<a><div class="nav_side_li_div" style="color:#532f2f;">夏至</div></a>
+							<a><div class="nav_side_li_div" style="color:#532f2f;">小暑</div></a>
+							<a><div class="nav_side_li_div" style="color:#532f2f;">大暑</div></a>
+						</li>
+					</a>
+					<a style="color:#8c8d46;"onclick="autumn_nav">
+						<li class="nav_side_li">秋月丰硕
+							<a><div class="nav_side_li_div" style="color:#8c8d46;">全部</div></a>
+							<a><div class="nav_side_li_div" style="color:#8c8d46;">立秋</div></a>
+							<a><div class="nav_side_li_div" style="color:#8c8d46;">处暑</div></a>
+							<a><div class="nav_side_li_div" style="color:#8c8d46;">白露</div></a>
+							<a><div class="nav_side_li_div" style="color:#8c8d46;">秋分</div></a>
+							<a><div class="nav_side_li_div" style="color:#8c8d46;">寒露</div></a>
+							<a><div class="nav_side_li_div" style="color:#8c8d46;">霜降</div></a>
+						</li>
+					</a>
+					<a style="color:#6a6a6a;"onclick="winter_nav">
+						<li class="nav_side_li">凛冬将至
+							<a><div class="nav_side_li_div" style="color:#6a6a6a;">全部</div></a>
+							<a><div class="nav_side_li_div" style="color:#6a6a6a;">立冬</div></a>
+							<a><div class="nav_side_li_div" style="color:#6a6a6a;">小雪</div></a>
+							<a><div class="nav_side_li_div" style="color:#6a6a6a;">大雪</div></a>
+							<a><div class="nav_side_li_div" style="color:#6a6a6a;">冬至</div></a>
+							<a><div class="nav_side_li_div" style="color:#6a6a6a;">小寒</div></a>
+							<a><div class="nav_side_li_div" style="color:#6a6a6a;">大寒</div></a>
+						</li>
+					</a>
+				</ul>
+			</div>
+			<div id="zhezhao" onclick="nav_hidden()"></div>
+		</div>
+		
+	</body>
+</html>
