@@ -1,0 +1,20 @@
+$(document).ready(function(){
+  $("#spring_nav").click(function(){
+    $(".title-1").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#summur_nav").click(function(){
+    $(".title-2").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#autumn_nav").click(function(){
+    $(".title-3").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#winter_nav").click(function(){
+    $(".title-4").toggle();
+  });
+});
