@@ -20,7 +20,8 @@ ul{
 	list-style-type: none;
 }
 #left_list{
-	position: relative;
+	float: left;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 0%;
@@ -148,4 +149,36 @@ ul{
 }
 #jianji4:hover #box-4{
 	display: inline-block;
+}
+#green{
+	float: left;
+	background-color:#3eda62;
+	width: 4px;
+	height: 26px;
+	margin-right: 4px;
+}
+#red{
+	float: left;
+	background-color:#da3f3e;
+	width: 4px;
+	height: 26px;
+	margin-right: 4px;
+}
+#yellow{
+	float: left;
+	background-color:#d1d277;
+	width: 4px;
+	height: 26px;
+	margin-right: 4px;
+}
+#grey{
+	float: left;
+	background-color:#dbdada;
+	width: 4px;
+	height: 26px;
+	margin-right: 4px;
+}
+.bg-main>img{
+	width: 100%;
+	height:auto;
 }
