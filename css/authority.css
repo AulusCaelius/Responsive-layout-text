@@ -4,6 +4,7 @@ nav{
 }
 a{
 	cursor:pointer ;
+	color: white;
 }
 a:hover{
 	text-decoration: none;
@@ -83,7 +84,68 @@ ul{
 	background-color: red;
 	width:100px;
 	background-color: #95af57;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-left: -80px;
-	padding: 20px;
+	padding: 10px;
+	padding-top: 20px;
+	display: none;
+	
+}
+#jianji1:hover #box-1{
+	display: inline-block;
+}
+
+#box-2{
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	height: auto;
+	background-color: red;
+	width:100px;
+	background-color: #95af57;
+	margin-top: 20px;
+	margin-left: -80px;
+	padding: 10px;
+	padding-top: 20px;
+	display: none;
+	
+}
+#jianji2:hover #box-2{
+	display: inline-block;
+}
+#box-3{
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	height: auto;
+	background-color: red;
+	width:100px;
+	background-color: #95af57;
+	margin-top: 20px;
+	margin-left: -80px;
+	padding: 10px;
+	padding-top: 20px;
+	display: none;
+	
+}
+#jianji3:hover #box-3{
+	display: inline-block;
+}
+#box-4{
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	height: auto;
+	background-color: red;
+	width:100px;
+	background-color: #95af57;
+	margin-top: 20px;
+	margin-left: -80px;
+	padding: 10px;
+	padding-top: 20px;
+	display: none;
+	
+}
+#jianji4:hover #box-4{
+	display: inline-block;
 }
