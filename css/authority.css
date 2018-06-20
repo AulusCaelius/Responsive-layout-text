@@ -60,6 +60,7 @@ ul{
 	left: 0;
 	float: left;
 	margin-top: 30px;
+	padding-left: 20%;
 }
 .nav_side_li{
 	height: auto;
@@ -150,28 +151,28 @@ ul{
 #jianji4:hover #box-4{
 	display: inline-block;
 }
-#green{
+.green{
 	float: left;
 	background-color:#3eda62;
 	width: 4px;
 	height: 26px;
 	margin-right: 4px;
 }
-#red{
+.red{
 	float: left;
 	background-color:#da3f3e;
 	width: 4px;
 	height: 26px;
 	margin-right: 4px;
 }
-#yellow{
+.yellow{
 	float: left;
 	background-color:#d1d277;
 	width: 4px;
 	height: 26px;
 	margin-right: 4px;
 }
-#grey{
+.grey{
 	float: left;
 	background-color:#dbdada;
 	width: 4px;
@@ -182,3 +183,16 @@ ul{
 	width: 100%;
 	height:auto;
 }
+
+h1{
+	font-size: 20px;
+}
+.hr{
+	width: 90%;
+	height : 2px;
+	background: #b5b5b5;
+}
+p{
+	color: #959595;
+}
+
