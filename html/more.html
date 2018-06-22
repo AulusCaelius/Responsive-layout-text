@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>text</title>
+		<script src="../js/jquery-3.3.1.min.js"></script>
+		<link rel="stylesheet" href="../css/bootstrap.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="../css/authority.css"/>
+		<script type="text/javascript" src="../js/bootstrap.min.js"/></script>
+		<script type="text/javascript" src="../js/left_side.js"></script>
+		<script type="text/javascript" src="../js/JQ_Left_side.js"></script>
+	</head> 
+	<body>
+		<div class="container-fluid" style="padding: 0px;position: relative;">
+			<nav class="col-xs-12 col-sm-12 col-md-12" style="background-color: #2f5337;">
+				<div class="visible-xs row">
+					<div class="col-xs-4"><a onclick="nav_side()"><img src="../image/列表.png"/ id="list"></a></div>
+					<p class="title col-xs-4" style="margin-top: 8px;font-size: 18px;font-weight:600;">24节气网</p>
+					<p class="title col-xs-4" style="font-size: 12px;margin-top: 14px;">当前:<span style="color: #c24f4f;">夏至</span></p>		
+				</div>
+				<div class="hidden-xs row">
+					<p class="visible-md visible-lg title col-md-3" style="margin-top:5px;font-size:20px;font-weight:600;">2&nbsp;4&nbsp;节&nbsp;气&nbsp;网&nbsp;站</p>
+					<ul style="margin-top: 8px;">
+						<li class="col-sm-3 col-md-2 title" style="font-size:16px;font-weight:600;">
+							<div><span id="jianji1" style="cursor: default;">春暖花开
+								<div id="box-1" class="col-sm-3 col-md-2">
+									<a>全部</a>
+									<a>立春</a>
+									<a>雨水</a>
+									<a>惊蛰</a>
+									<a>春分</a>
+									<a>清明</a>
+									<a>谷雨</a>
+							</div>
+								</span>
+							</div>							
+						</li>
+						<li class="col-sm-3 col-md-2 title" style="font-size:16px;font-weight:600;">
+							<div><span id="jianji2" style="cursor: default;">夏日热情
+								<div id="box-2" class="col-sm-3 col-md-2 title">
+									<a>全部</a>
+									<a>立夏</a>
+									<a>小满</a>
+									<a>芒种</a>
+									<a>夏至</a>
+									<a>小暑</a>
+									<a>大暑</a>
+							</div>
+								</span>
+							</div>	
+						</li>
+						<li class="col-sm-3 col-md-2 title" style="font-size:16px;font-weight:600;">
+							<div><span id="jianji3" style="cursor: default;">秋月丰硕
+								<div id="box-3" class="col-sm-3 col-md-2 title">
+									<a>全部</a>
+									<a>立秋</a>
+									<a>处暑</a>
+									<a>白露</a>
+									<a>秋分</a>
+									<a>寒露</a>
+									<a>霜降</a>
+							</div>
+								</span>
+							</div>	
+						</li>
+						<li class="col-sm-3 col-md-2 title" style="font-size:16px;font-weight:600;">
+							<div><span id="jianji4" style="cursor: default;">凛冬将至
+								<div id="box-4" class="col-sm-3 col-md-2 title">
+									<a>全部</a>
+									<a>立冬</a>
+									<a>小雪</a>
+									<a>大雪</a>
+									<a>冬至</a>
+									<a>小寒</a>
+									<a>大寒</a>									
+							</div>
+								</span>
+							</div>	
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div id="left_list" class="visible-xs">
+				<img id="nav_side_img" onclick="nav_side()" src="../image/nav_side_img.jpg"/>
+				<ul id="nav_side_ul" >
+					<a style="color:#687d6c;">
+						<li class="nav_side_li"><div class="green"></div><span id="spring_nav">春暖花开</span>
+							<a><div class="nav_side_li_div title-1" style="color:#687d6c;">全部</div></a>
+							<a><div class="nav_side_li_div title-1" style="color:#687d6c;">立春</div></a>
+							<a><div class="nav_side_li_div title-1" style="color:#687d6c;">雨水</div></a>
+							<a><div class="nav_side_li_div title-1" style="color:#687d6c;">惊蛰</div></a>
+							<a><div class="nav_side_li_div title-1" style="color:#687d6c;">春分</div></a>
+							<a><div class="nav_side_li_div title-1" style="color:#687d6c;">清明</div></a>
+							<a><div class="nav_side_li_div title-1" style="color:#687d6c;">谷雨</div></a>
+						</li>
+					</a>
+					<a style="color:#532f2f;">
+						<li class="nav_side_li"><div class="red"></div><span id="summur_nav">夏日热情</span>
+							<a><div class="nav_side_li_div title-2" style="color:#532f2f;">全部</div></a>
+							<a><div class="nav_side_li_div title-2" style="color:#532f2f;">立夏</div></a>
+							<a><div class="nav_side_li_div title-2" style="color:#532f2f;">小满</div></a>
+							<a><div class="nav_side_li_div title-2" style="color:#532f2f;">芒种</div></a>
+							<a><div class="nav_side_li_div title-2" style="color:#532f2f;">夏至</div></a>
+							<a><div class="nav_side_li_div title-2" style="color:#532f2f;">小暑</div></a>
+							<a><div class="nav_side_li_div title-2" style="color:#532f2f;">大暑</div></a>
+						</li>
+					</a>
+					<a style="color:#8c8d46;">
+						<li class="nav_side_li"><div class="yellow"></div><span id="autumn_nav">秋月丰硕</span>
+							<a><div class="nav_side_li_div title-3" style="color:#8c8d46;">全部</div></a>
+							<a><div class="nav_side_li_div title-3" style="color:#8c8d46;">立秋</div></a>
+							<a><div class="nav_side_li_div title-3" style="color:#8c8d46;">处暑</div></a>
+							<a><div class="nav_side_li_div title-3" style="color:#8c8d46;">白露</div></a>
+							<a><div class="nav_side_li_div title-3" style="color:#8c8d46;">秋分</div></a>
+							<a><div class="nav_side_li_div title-3" style="color:#8c8d46;">寒露</div></a>
+							<a><div class="nav_side_li_div title-3" style="color:#8c8d46;">霜降</div></a>
+						</li>
+					</a>
+					<a style="color:#6a6a6a;">
+						<li class="nav_side_li"><div class="grey"></div><span id="winter_nav">凛冬将至</span>
+							<a><div class="nav_side_li_div title-4" style="color:#6a6a6a;">全部</div></a>
+							<a><div class="nav_side_li_div title-4" style="color:#6a6a6a;">立冬</div></a>
+							<a><div class="nav_side_li_div title-4" style="color:#6a6a6a;">小雪</div></a>
+							<a><div class="nav_side_li_div title-4" style="color:#6a6a6a;">大雪</div></a>
+							<a><div class="nav_side_li_div title-4" style="color:#6a6a6a;">冬至</div></a>
+							<a><div class="nav_side_li_div title-4" style="color:#6a6a6a;">小寒</div></a>
+							<a><div class="nav_side_li_div title-4" style="color:#6a6a6a;">大寒</div></a>
+						</li>
+					</a>
+				</ul>
+			</div>
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>			
+			<div class="col-xs-12 visible-xs"style="height: 30px;width: 100%;">
+				<div class="green" style="width: 4px;height: 30px;"></div>
+				<span>所有文章</span>
+			</div>
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>
+			<div class="col-xs-12 visible-xs"style="height: 85px;width: 100%;">
+				<span><strong>立春：闻到早春的气息</strong></span>
+					<p>立春不仅是二十四节气中的第一个节气，而且还是一个重要的节日。
+						在天文意义上它标志着春季的开始。立春节气一般是从2月4日或5日开始，到2月19或20日结束。
+						立春与立夏......
+					</p>
+			</div>
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>
+			<div class="col-xs-12 visible-xs"style="height: 85px;width: 100%;">
+				<span><strong>立春：闻到早春的气息</strong></span>
+					<p>立春不仅是二十四节气中的第一个节气，而且还是一个重要的节日。
+						在天文意义上它标志着春季的开始。立春节气一般是从2月4日或5日开始，到2月19或20日结束。
+						立春与立夏......
+					</p>
+			</div>
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>
+			<div class="col-xs-12 visible-xs"style="height: 85px;width: 100%;">
+				<span><strong>立春：闻到早春的气息</strong></span>
+					<p>立春不仅是二十四节气中的第一个节气，而且还是一个重要的节日。
+						在天文意义上它标志着春季的开始。立春节气一般是从2月4日或5日开始，到2月19或20日结束。
+						立春与立夏......
+					</p>
+			</div>
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>
+			<div class="col-xs-12 visible-xs"style="height: 85px;width: 100%;">
+				<span><strong>立春：闻到早春的气息</strong></span>
+					<p>立春不仅是二十四节气中的第一个节气，而且还是一个重要的节日。
+						在天文意义上它标志着春季的开始。立春节气一般是从2月4日或5日开始，到2月19或20日结束。
+						立春与立夏......
+					</p>
+			</div>
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>
+			<div class="col-xs-12 visible-xs"style="height: 85px;width: 100%;">
+				<span><strong>立春：闻到早春的气息</strong></span>
+					<p>立春不仅是二十四节气中的第一个节气，而且还是一个重要的节日。
+						在天文意义上它标志着春季的开始。立春节气一般是从2月4日或5日开始，到2月19或20日结束。
+						立春与立夏......
+					</p>
+			</div>
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>
+			<div class="col-xs-12 visible-xs"style="height: 85px;width: 100%;">
+				<span><strong>立春：闻到早春的气息</strong></span>
+					<p>立春不仅是二十四节气中的第一个节气，而且还是一个重要的节日。
+						在天文意义上它标志着春季的开始。立春节气一般是从2月4日或5日开始，到2月19或20日结束。
+						立春与立夏......
+					</p>
+			</div>
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>
+			
+			<div class="col-xs-12 visible-xs"style="height: 85px;width: 100%;">
+				<span><strong>立春：闻到早春的气息</strong></span>
+					<p>立春不仅是二十四节气中的第一个节气，而且还是一个重要的节日。
+						在天文意义上它标志着春季的开始。立春节气一般是从2月4日或5日开始，到2月19或20日结束。
+						立春与立夏......
+					</p>
+			</div>			
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>
+			<div class="col-xs-12 visible-xs"style="height: 85px;width: 100%;">
+				<span><strong>立春：闻到早春的气息</strong></span>
+					<p>立春不仅是二十四节气中的第一个节气，而且还是一个重要的节日。
+						在天文意义上它标志着春季的开始。立春节气一般是从2月4日或5日开始，到2月19或20日结束。
+						立春与立夏......
+					</p>
+			</div>
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>
+			<div class="col-xs-12 visible-xs"style="height: 85px;width: 100%;">
+				<span><strong>立春：闻到早春的气息</strong></span>
+					<p>立春不仅是二十四节气中的第一个节气，而且还是一个重要的节日。
+						在天文意义上它标志着春季的开始。立春节气一般是从2月4日或5日开始，到2月19或20日结束。
+						立春与立夏......
+					</p>
+			</div>
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>
+			<div class="col-xs-12 visible-xs"style="height: 85px;width: 100%;">
+				<span><strong>立春：闻到早春的气息</strong></span>
+					<p>立春不仅是二十四节气中的第一个节气，而且还是一个重要的节日。
+						在天文意义上它标志着春季的开始。立春节气一般是从2月4日或5日开始，到2月19或20日结束。
+						立春与立夏......
+					</p>
+			</div>
+			<div class="col-xs-12 visible-xs"style="height: 5px;width: 100%;background: #d1d1d1;"></div>
+			</div>
+			<div id="zhezhao" onclick="nav_hidden()"></div>
+		</div>
+	</body>
+</html>
+
